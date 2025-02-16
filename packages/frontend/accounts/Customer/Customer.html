@@ -16,27 +16,33 @@
         <nav>
             <div class="acc-logo">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <span><h3>Driver</h3></span> 
+                <span><h3>Customer</h3></span>
             </div>
-            <hr>          
+            <hr>
             <div class="nav-con">
                 <ul>
                     <li>
-                        <a href="#" class="active">
-                            <i class="fa fa-home" aria-hidden="true"></i>
+                        <a href="../Customer/Customer.html" class="active">
+                            <i class="fa fa-home"></i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="../Customer/BookCar.html">
                             <i class="fa fa-tasks"></i>
                             <span>Booking Overview</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="../Customer/DriverTransfer.html">
+                            <i class="fa fa-tasks"></i>
+                            <span>Become a Driver</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="logout-btn">
-                    <a href="">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="../../index.html">
+                        <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                     </a>
                 </div>
@@ -44,12 +50,13 @@
         </nav>
         <main>
             <h1>Welcome Firstname Lastname!</h1>
+            <div class="p-2"></div>
             <div class="edit-user p-4">
-                <h4>Edit Profile Details</h4>
+                <h4>Profile Details</h4>
                 <form action="" class="row g-3">
                     <div class="col-md-12">
                         <label for="userId" class="form-label">Customer ID</label>
-                        <input class="form-control" type="text" placeholder="ID101" disabled>
+                        <input type="text" class="form-control" id="userId" placeholder="ID101" disabled>
                     </div>
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
@@ -79,20 +86,6 @@
                         <button type="submit" class="btn w-100">Update Profile</button>
                     </div>
                 </form>
-            </div>
-            <div class="p-2"></div>
-            <div class="bookingOpt p-4">
-                <h4>Booking Options</h4>
-                <div class="bookOpt">
-                    <div class="OptItem"><a href="">
-                        <i class="fa fa-car" aria-hidden="true"></i>
-                        <span>Book a Car</span></a>
-                    </div>
-                    <div class="OptItem"><a href="">
-                        <i class="fa fa-table" aria-hidden="true"></i>
-                        <span>Manage Bookings</span></a>
-                    </div>
-                </div>
             </div>
             <div class="p-2"></div>
             <div class="delete-acc p-4">

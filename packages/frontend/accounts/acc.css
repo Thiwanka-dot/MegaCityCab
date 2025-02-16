@@ -6,6 +6,7 @@
 
 a{
     color: yellow;
+    text-decoration: none;
 }
 
 body{
@@ -21,7 +22,7 @@ body{
 nav {
     background: #000;
     height: 100vh;
-    width: 73px;
+    width: 80px;
     padding: 1rem;
     position: fixed;
     color: yellow;
@@ -130,7 +131,6 @@ nav:hover {
     width: 220px;
 }
 
-.availability,
 .edit-user,
 .delete-acc,
 .booking-list,
@@ -187,29 +187,23 @@ nav:hover {
 
 /*Customer*/
 
-.bookOpt{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.driverTxt{
     padding: 1rem;
-    gap: 10px;
 }
 
-.OptItem a{
+.driverImg{
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    background: #000;
-    gap: 5px;
-    padding: 1rem;
-    border: none;
+    text-align: center;
+    background: yellow;
     border-radius: 15px;
-    transition: all ease-in-out 0.3s;
 }
 
-.OptItem a:hover{
-    background: yellow;
-    color: #000;
+.driverImg img{
+    height: 500px;
+    border-radius: 0 15px 15px 0;
 }
 
 @media (max-width:800px){
@@ -220,6 +214,14 @@ nav:hover {
     .tot-book i,
     .tot-pay i{
         font-size: 2.5rem;
+    }
+
+    .driverImg{
+        flex-wrap: wrap;
+    }
+
+    .driverImg img{
+        border-radius: 0 0 15px 15px;
     }
 
 }

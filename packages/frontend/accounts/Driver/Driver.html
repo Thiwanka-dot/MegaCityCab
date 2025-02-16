@@ -13,51 +13,50 @@
 </head>
 <body>
     <div class="acc-con">
-        <nav>    
+        <nav>
             <div class="acc-logo">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <i class="fa fa-user-circle"></i>
                 <span><h3>Driver</h3></span> 
             </div>
             <hr>          
             <div class="nav-con">
                 <ul>
                     <li>
-                        <a href="#" class="active">
-                            <i class="fa fa-home" aria-hidden="true"></i>
+                        <a href="../Driver/Driver.html" class="active">
+                            <i class="fa fa-home"></i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="../Driver/Bookings.html">
                             <i class="fa fa-tasks"></i>
                             <span>Booking Overview</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="../Driver/VehicleDetails.html">
+                            <i class="fa fa-tasks"></i>
+                            <span>Vehicle Details</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="logout-btn">
-                    <a href="">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="../../index.html">
+                        <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                     </a>
                 </div>
             </div>
         </nav>
         <main>
-            <h1>Welcome Firstname Lastname! <button type="button" class="btn btn-outline-primary" disabled>● Default</button></h1>
-            <div class="availability p-4">
-                <p><strong>Are you available now?</strong></p>
-                <div class="aval-btn">
-                    <button type="button" class="btn btn-success">Available</button>
-                    <button type="button" class="btn btn-danger">Not Available</button>
-                </div>
-            </div>
+            <h1>Welcome Firstname Lastname!</h1>
             <div class="p-2"></div>
             <div class="edit-user p-4">
-                <h4>Edit Profile Details</h4>
+                <h4>Profile Details</h4>
                 <form action="" class="row g-3">
                     <div class="col-md-12">
                         <label for="userId" class="form-label">Driver ID</label>
-                        <input class="form-control" type="text" placeholder="ID101" disabled>
+                        <input type="text" class="form-control" id="userId" placeholder="ID101" disabled>
                     </div>
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
