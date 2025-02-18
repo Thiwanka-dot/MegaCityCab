@@ -134,7 +134,9 @@ nav:hover {
 .edit-user,
 .delete-acc,
 .booking-list,
-.bookingOpt {
+.bookOverview,
+.adminReport,
+.manageCon {
     border: 2px solid yellow;
     width: 100%;
 }
@@ -168,7 +170,7 @@ nav:hover {
 
 .tot-book i,
 .tot-pay i,
-.OptItem a i{
+.adminItem i{
     font-size: 3.5rem;
 }
 
@@ -206,6 +208,29 @@ nav:hover {
     border-radius: 0 15px 15px 0;
 }
 
+/*Admin*/
+
+.adminReport,
+.manageList{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.adminItem{
+    display: flex;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 1rem;
+    gap: 25px;
+}
+
+.manageList button{
+    padding: 1rem;
+    font-weight: 600;
+}
+
 @media (max-width:800px){
     .total-view{
         grid-template-columns: 1fr;
@@ -222,6 +247,10 @@ nav:hover {
 
     .driverImg img{
         border-radius: 0 0 15px 15px;
+    }
+
+    .adminReport{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }

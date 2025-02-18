@@ -22,7 +22,7 @@
             <div class="nav-con">
                 <ul>
                     <li>
-                        <a href="../Admin/Admin.html" class="active">
+                        <a href="../Admin/Admin.html">
                             <i class="fa fa-home"></i>
                             <span>Home</span>
                         </a>
@@ -52,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../Admin/DistancePrice.html">
+                        <a href="../Admin/DistancePrice.html" class="active">
                             <i class="fa fa-tasks"></i>
                             <span>Distance Pricing</span>
                         </a>
@@ -67,47 +67,61 @@
             </div>
         </nav>
         <main>
-            <h1>System Overview</h1>
+            <h1>Distance Pricing</h1>
             <div class="p-2"></div>
-            <div class="adminReport p-4">
-                <div class="adminItem">
-                    <i class="fa fa-car"></i>
-                    <div class="book-txt">
-                        <span><strong>Total No of Bookings</strong></span>                            
-                        <h2>22</h2>                            
+            <div class="edit-user p-4">
+                <h4>Set Distance Price</h4>
+                <form action="" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="startLoc" class="form-label">Start Location</label>
+                        <select id="startLoc" class="selectpicker form-control" data-live-search="true" title="Select a Location">
+                            <option value="colombo">Colombo</option>
+                            <option value="kandy">Kandy</option>
+                            <option value="galle">Galle</option>
+                            <option value="negombo">Negombo</option>
+                        </select>
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-money"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Payment</strong></span>
-                        <h3>100 LKR</h3>                            
+                    <div class="col-md-6">
+                        <label for="endLoc" class="form-label">End Location</label>
+                        <select id="endLoc" class="selectpicker form-control" data-live-search="true" title="Select a Location">
+                            <option value="colombo">Colombo</option>
+                            <option value="kandy">Kandy</option>
+                            <option value="galle">Galle</option>
+                            <option value="negombo">Negombo</option>
+                        </select>
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-users"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Customers</strong></span>
-                        <h3>100</h3>                            
+                    <div class="col-md-3">
+                        <label for="disPrice" class="form-label">Distance Price (LKR)</label>
+                        <input type="number" class="form-control" id="disPrice" placeholder="Enter Distance Price">
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-users"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Drivers</strong></span>
-                        <h3>100</h3>                            
+                    <div class="col-12">
+                        <button type="submit" class="btn w-100">Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="p-2"></div>
-            <div class="manageCon p-4">
-                <h4>Admin Tasks</h4>
-                <div class="manageList">
-                    <button type="button" class="btn btn-primary"><a href="">View Cab Bookings</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Customer Details</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Driver Details</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Discounts</a></button>
-                </div>
+            <div class="booking-list p-4">
+                <h4>View Distance Prices</h4>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Start Location</th>
+                            <th scope="col">End Location</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td class="btn"><button type="button" class="btn btn-primary">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="p-2"></div>
         </main>

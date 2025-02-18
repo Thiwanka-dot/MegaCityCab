@@ -55,12 +55,21 @@
             <div class="edit-user p-4">
                 <h4>Cab Booking</h4>
                 <form action="" class="row g-3">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="customerName" class="form-label">Customer Name</label>
                         <input type="text" class="form-control" id="customerName" placeholder="Enter Name">
                     </div>
                     <div class="col-md-6">
-                        <label for="endLoc" class="form-label">Destination</label>
+                        <label for="startLoc" class="form-label">Start Location</label>
+                        <select id="startLoc" class="selectpicker form-control" data-live-search="true" title="Select a Location">
+                            <option value="colombo">Colombo</option>
+                            <option value="kandy">Kandy</option>
+                            <option value="galle">Galle</option>
+                            <option value="negombo">Negombo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="endLoc" class="form-label">End Location</label>
                         <select id="endLoc" class="selectpicker form-control" data-live-search="true" title="Select a Location">
                             <option value="colombo">Colombo</option>
                             <option value="kandy">Kandy</option>
@@ -122,16 +131,6 @@
                         <tr>
                             <th scope="row">1</th>
                             <td style="max-width: 150px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, esse fugiat tenetur porro iure.</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td class="btn"><button type="button" class="btn btn-outline-secondary">Pending</button> <button type="button" class="btn btn-danger">Cancel</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                             <td>@mdo</td>

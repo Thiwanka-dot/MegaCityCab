@@ -22,7 +22,7 @@
             <div class="nav-con">
                 <ul>
                     <li>
-                        <a href="../Admin/Admin.html" class="active">
+                        <a href="../Admin/Admin.html">
                             <i class="fa fa-home"></i>
                             <span>Home</span>
                         </a>
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../Admin/Discounts.html">
+                        <a href="../Admin/Discounts.html" class="active">
                             <i class="fa fa-tasks"></i>
                             <span>Discounts</span>
                         </a>
@@ -67,47 +67,49 @@
             </div>
         </nav>
         <main>
-            <h1>System Overview</h1>
+            <h1>Discounts Management</h1>
             <div class="p-2"></div>
-            <div class="adminReport p-4">
-                <div class="adminItem">
-                    <i class="fa fa-car"></i>
-                    <div class="book-txt">
-                        <span><strong>Total No of Bookings</strong></span>                            
-                        <h2>22</h2>                            
+            <div class="edit-user p-4">
+                <h4>Add Discount</h4>
+                <form action="" class="row g-3">
+                    <div class="col-md-4">
+                        <label for="discountCode" class="form-label">Enter Discount Code</label>
+                        <input type="text" class="form-control" id="discountCode" placeholder="Ex. CEf106">
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-money"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Payment</strong></span>
-                        <h3>100 LKR</h3>                            
+                    <div class="col-md-4">
+                        <label for="discountAmt" class="form-label">Enter Discount Amount (%)</label>
+                        <input type="number" class="form-control" id="discountAmt" placeholder="Discount Amount">
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-users"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Customers</strong></span>
-                        <h3>100</h3>                            
+                    <div class="col-md-4">
+                        <label for="discountDur" class="form-label">Enter Discount Duration (days)</label>
+                        <input type="number" class="form-control" id="discountDur" placeholder="Ex. 90">
                     </div>
-                </div>
-                <div class="adminItem">
-                    <i class="fa fa-users"></i>
-                    <div class="pay-txt">
-                        <span><strong>Total Drivers</strong></span>
-                        <h3>100</h3>                            
+                    <div class="col-12">
+                        <button type="submit" class="btn w-100">Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="p-2"></div>
-            <div class="manageCon p-4">
-                <h4>Admin Tasks</h4>
-                <div class="manageList">
-                    <button type="button" class="btn btn-primary"><a href="">View Cab Bookings</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Customer Details</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Driver Details</a></button>
-                    <button type="button" class="btn btn-primary"><a href="">Manage Discounts</a></button>
-                </div>
+            <div class="booking-list p-4">
+                <h4>View Discounts</h4>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Discount ID</th>
+                            <th scope="col">Discount Code</th>
+                            <th scope="col">Discount Amount</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Lorem</td>
+                            <td>Otto</td>
+                            <td class="btn"><button type="button" class="btn btn-danger">Cancel</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="p-2"></div>
         </main>
